@@ -1,0 +1,24 @@
+{
+  "name": "graphql-crash-course",
+  "version": "1.0.0",
+  "description": "Hi future, on this occasion I try to learn something new for me, namely a technology that can make it easier for us to process a lot of data on the server, this technology is called Graphql, I also tried to combine it with javascript technology that is currently popular, namely React .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novaardiansyah/graphql-crash-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/novaardiansyah/graphql-crash-course/issues"
+  },
+  "homepage": "https://github.com/novaardiansyah/graphql-crash-course#readme",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
