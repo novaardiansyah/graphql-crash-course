@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/novaardiansyah/graphql-crash-course#readme",
   "dependencies": {
+    "apollo-server": "^2.21.0",
+    "graphql": "^15.5.0",
     "nodemon": "^2.0.16"
   }
 }
