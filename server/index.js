@@ -17,11 +17,13 @@ const typeDefs = gql`
     description: [String!]!,
     stock: Int!,
     onSale: Boolean,
+    slug: String!,
   }
 
   type Query {
     mainCards: [MainCard]
-    animals: [Animal]
+    animals: [Animal!]!
+    animal(slug: String!): Animal
   }
 `;
 
@@ -29,6 +31,13 @@ const resolver = {
   Query: {
     mainCards: () => mainCards,
     animals: () => animals,
+    animal: (parent, args, context) => {
+      let animal = animals.find((animal) => {
+        return animal.slug === args.slug;
+      });
+
+      return animal;
+    }
   }
 }
 
